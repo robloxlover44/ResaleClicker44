@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlTypes;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,4 +38,18 @@ public class click : MonoBehaviour
     {
         moneyText.text = money + "$";
     }
+
+    public void BuyItem(int itemCost)
+    {
+        if (money >= itemCost)
+        {
+            money -= itemCost;
+            Debug.Log("Item bought successfully!");
+        }
+        else
+        {
+            Debug.Log("Not enough money to buy this item!");
+        }
+    }
+
 }
