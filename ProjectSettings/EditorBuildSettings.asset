@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/More_shop.unity
     guid: 35f493c79b722fb4fa3c10128d833739
   - enabled: 1
-    path: Assets/Options.unity
+    path: Assets/Scenes/Options.unity
     guid: 33b67ffed066e2049b4afbafc571336b
   m_configObjects: {}
