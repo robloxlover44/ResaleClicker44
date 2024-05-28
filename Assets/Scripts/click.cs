@@ -51,5 +51,33 @@ public class click : MonoBehaviour
             Debug.Log("Not enough money to buy this item!");
         }
     }
+    
+    
+    
+    public static void SaveData(string money, string value)
+    {
+        PlayerPrefs.SetString(money, value);
+        PlayerPrefs.Save();
+    }
+
+    // Load data from PlayerPrefs
+    public static string LoadData(string money)
+    {
+        if (PlayerPrefs.HasKey(money))
+        {
+            return PlayerPrefs.GetString(money);
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    // Clear data from PlayerPrefs
+    public static void ClearData(string money)
+    {
+        PlayerPrefs.DeleteKey(money);
+        PlayerPrefs.Save();
+    }
 
 }
