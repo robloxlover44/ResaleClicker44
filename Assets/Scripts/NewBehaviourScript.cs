@@ -5,15 +5,15 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class click : MonoBehaviour
+public class superclick : MonoBehaviour
 {
     public static int money
     {
         get => _money;
-        set 
-        { 
+        set
+        {
             _money = value;
-            PlayerPrefs.SetInt("money",_money);
+            PlayerPrefs.SetInt("money", _money);
         }
     }
 
@@ -25,7 +25,7 @@ public class click : MonoBehaviour
     private void Start()
     {
         money = PlayerPrefs.GetInt("money", 0);
-        rate = PlayerPrefs.GetInt("rate", 1488);
+        rate = PlayerPrefs.GetInt("rate", 1);
     }
 
     public void Click()
@@ -38,7 +38,7 @@ public class click : MonoBehaviour
         if (money >= 15)
         {
             money -= 15;
-            rate += 1488;
+            rate += 1;
             PlayerPrefs.SetInt("money", money);
             PlayerPrefs.SetInt("rate", rate);
         }
@@ -63,9 +63,9 @@ public class click : MonoBehaviour
             return false;
         }
     }
-    
-    
-    
+
+
+
     public static void SaveData(string money, string value)
     {
         PlayerPrefs.SetString(money, value);
