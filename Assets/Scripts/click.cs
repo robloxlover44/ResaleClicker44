@@ -7,7 +7,17 @@ using UnityEngine.UI;
 
 public class click : MonoBehaviour
 {
-    public static int money;
+    public static int money
+    {
+        get => _money;
+        set 
+        { 
+            _money = value;
+            PlayerPrefs.SetInt("money",_money);
+        }
+    }
+
+    private static int _money;
     public static int rate = 1;
 
     public Text moneyText;
