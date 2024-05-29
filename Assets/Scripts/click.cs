@@ -49,16 +49,18 @@ public class click : MonoBehaviour
         moneyText.text = money + "$";
     }
 
-    public void BuyItem(int itemCost)
+    public bool BuyItem(int itemCost)
     {
         if (money >= itemCost)
         {
             money -= itemCost;
             Debug.Log("Item bought successfully!");
+            return true;
         }
         else
         {
             Debug.Log("Not enough money to buy this item!");
+            return false;
         }
     }
     
