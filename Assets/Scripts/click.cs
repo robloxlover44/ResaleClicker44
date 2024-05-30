@@ -21,11 +21,23 @@ public class click : MonoBehaviour
     public static int rate = 1000;
 
     public Text moneyText;
-
+    public Button buyButton;
+    public Image buyButtonImage;
     private void Start()
     {
         money = PlayerPrefs.GetInt("money", 0);
         rate = PlayerPrefs.GetInt("rate", 1000);
+        int buttonenabled = PlayerPrefs.GetInt("ButtonUnlocked", -1);
+        if(buttonenabled != -1 )
+        {
+            buyButton.enabled = true;
+            buyButtonImage.raycastTarget = true;
+        }
+        else
+        {
+            buyButton.enabled = false;
+            buyButtonImage.raycastTarget = false;
+        }
     }
 
     public void Click()

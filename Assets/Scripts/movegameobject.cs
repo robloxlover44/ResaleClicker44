@@ -16,9 +16,9 @@ public class movegameobject : MonoBehaviour
     public Image nextImage;
     public Sprite nextSprite;
     public Button nextButton;
-    public Text nextPrice;
-    public GameObject nextShoe;
+    public GameObject nextPrice;
     public int ItemID;
+    public Button _button;
 
     public void OnClick()
     {
@@ -31,8 +31,9 @@ public class movegameobject : MonoBehaviour
             cost.SetActive(false);
             nextImage.sprite = nextSprite;
             nextButton.enabled = true;
-            nextPrice.text= "kaki puki";
-            PlayerPrefs.SetInt("Item", ItemID);
+            nextPrice.SetActive(true);
+            PlayerPrefs.SetInt("ButtonUnlocked", 1);
+            _button.enabled = false;
             
         }
         

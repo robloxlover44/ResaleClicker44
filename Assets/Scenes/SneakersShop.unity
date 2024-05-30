@@ -712,8 +712,8 @@ MonoBehaviour:
   nextSprite: {fileID: 0}
   nextButton: {fileID: 0}
   nextPrice: {fileID: 0}
-  nextShoe: {fileID: 0}
   ItemID: 7
+  _button: {fileID: 0}
 --- !u!1 &647723068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,18 +1013,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 863995324}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &863995325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1248,10 +1236,10 @@ MonoBehaviour:
   cost: {fileID: 1908765971}
   nextImage: {fileID: 2025478029}
   nextSprite: {fileID: 21300000, guid: 7896b3d969fcf1648983637a55141b2b, type: 3}
-  nextButton: {fileID: 2025478026}
-  nextPrice: {fileID: 1647984353}
-  nextShoe: {fileID: 0}
+  nextButton: {fileID: 2025478028}
+  nextPrice: {fileID: 1647984350}
   ItemID: 1
+  _button: {fileID: 863995324}
 --- !u!1 &897396197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,8 +1369,8 @@ MonoBehaviour:
   nextSprite: {fileID: 0}
   nextButton: {fileID: 0}
   nextPrice: {fileID: 0}
-  nextShoe: {fileID: 0}
   ItemID: 0
+  _button: {fileID: 0}
 --- !u!1 &907793547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,10 +1714,10 @@ MonoBehaviour:
   cost: {fileID: 1833307139}
   nextImage: {fileID: 568754934}
   nextSprite: {fileID: 21300000, guid: 039313954bdf5a04bae17f9ae4c45077, type: 3}
-  nextButton: {fileID: 0}
-  nextPrice: {fileID: 284171630}
-  nextShoe: {fileID: 0}
+  nextButton: {fileID: 568754933}
+  nextPrice: {fileID: 1833307139}
   ItemID: 8
+  _button: {fileID: 907793549}
 --- !u!1 &993962536
 GameObject:
   m_ObjectHideFlags: 0
@@ -4378,9 +4366,9 @@ MonoBehaviour:
   nextImage: {fileID: 907793550}
   nextSprite: {fileID: 21300000, guid: 8fd7745621b188b4b9ca7980d9c24369, type: 3}
   nextButton: {fileID: 907793547}
-  nextPrice: {fileID: 1833307142}
-  nextShoe: {fileID: 0}
+  nextPrice: {fileID: 0}
   ItemID: 4
+  _button: {fileID: 0}
 --- !u!1 &2030218309
 GameObject:
   m_ObjectHideFlags: 0
