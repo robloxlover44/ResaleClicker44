@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class click_samba : MonoBehaviour
+public class Click_niteball : MonoBehaviour
 {
     public static int money
     {
@@ -18,27 +18,27 @@ public class click_samba : MonoBehaviour
     }
 
     private static int _money;
-    public static int rate = 2000;
-    public Button buyButton_samba;
-    public GameObject buyButton_gm_samba;
-    public Image buyButtonImage_samba;
+    public static int rate = 3000;
+    public Button buyButton_niteball;
+    public GameObject buyButton_gm_niteball;
+    public Image buyButtonImage_niteball;
     public Text moneytext;
     private void Start()
     {
         money = PlayerPrefs.GetInt("money", 0);
-        rate = PlayerPrefs.GetInt("rate", 2000);
-        int buttonenabled_samba = PlayerPrefs.GetInt("ButtonUnlocked_Samba", -1);
+        rate = PlayerPrefs.GetInt("rate", 3000);
+        int buttonenabled_samba = PlayerPrefs.GetInt("ButtonUnlocked_Niteball", -1);
         if (buttonenabled_samba != -1)
         {
-            buyButton_samba.enabled = true;
-            buyButtonImage_samba.raycastTarget = true;
-            buyButton_gm_samba.SetActive(true);
+            buyButton_niteball.enabled = true;
+            buyButtonImage_niteball.raycastTarget = true;
+            buyButton_gm_niteball.SetActive(true);
         }
         else
         {
-            buyButton_samba.enabled = false;
-            buyButtonImage_samba.raycastTarget = false;
-            buyButton_gm_samba.SetActive(false);
+            buyButton_niteball.enabled = false;
+            buyButtonImage_niteball.raycastTarget = false;
+            buyButton_gm_niteball.SetActive(false);
 
         }
 
@@ -58,7 +58,7 @@ public class click_samba : MonoBehaviour
         if (money >= 15)
         {
             money -= 15;
-            rate += 2000;
+            rate += 3000;
             PlayerPrefs.SetInt("money", money);
             PlayerPrefs.SetInt("rate", rate);
         }

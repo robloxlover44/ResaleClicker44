@@ -16,32 +16,42 @@ public class click : MonoBehaviour
             PlayerPrefs.SetInt("money",_money);
         }
     }
+<<<<<<< Updated upstream
+
+=======
+    public Text moneytext;
+>>>>>>> Stashed changes
     private static int _money;
     public static int rate = 1000;
-    public Button buyButton_superstar;
-    public GameObject buyButton_gm_superstar;
-    public Image buyButtonImage_superstar;
+
+    public Text moneyText;
+    public Button buyButton;
+    public Image buyButtonImage;
     private void Start()
     {
         money = PlayerPrefs.GetInt("money", 0);
         rate = PlayerPrefs.GetInt("rate", 1000);
-        int buttonenabled_superstar = PlayerPrefs.GetInt("ButtonUnlocked_Superstar", -1);
-        if(buttonenabled_superstar != -1 )
+        int buttonenabled = PlayerPrefs.GetInt("ButtonUnlocked", -1);
+        if(buttonenabled != -1 )
         {
-            buyButton_superstar.enabled = true;
-            buyButtonImage_superstar.raycastTarget = true;
-            buyButton_gm_superstar.SetActive(true);
+            buyButton.enabled = true;
+            buyButtonImage.raycastTarget = true;
         }
         else
         {
-            buyButton_superstar.enabled = false;
-            buyButtonImage_superstar.raycastTarget = false;
-            buyButton_gm_superstar.SetActive(false);
-
+            buyButton.enabled = false;
+            buyButtonImage.raycastTarget = false;
         }
+    }
+<<<<<<< Updated upstream
 
+=======
+    public void Update()
+    {
+        moneytext.text = money + "$";
     }
  
+>>>>>>> Stashed changes
     public void Click()
     {
         money += rate;
@@ -58,7 +68,10 @@ public class click : MonoBehaviour
         }
     }
 
-
+    public void Update()
+    {
+        moneyText.text = money + "$";
+    }
 
     public bool BuyItem(int itemCost)
     {

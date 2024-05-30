@@ -699,22 +699,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 568754931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c381055cd0edb864aa07f5bc3af217c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a60687a1c0f84749ab1d6779e00d252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  _click: {fileID: 0}
-  _cost: 0
-  soldout: {fileID: 0}
-  locked: {fileID: 0}
-  cost: {fileID: 0}
-  nextImage: {fileID: 0}
-  nextSprite: {fileID: 0}
-  nextButton: {fileID: 0}
-  nextPrice: {fileID: 0}
+  animator: {fileID: 568754936}
+  _click: {fileID: 897396201}
+  _cost: 250
+  soldout: {fileID: 1638930555}
+  cost: {fileID: 284171627}
   ItemID: 7
+<<<<<<< Updated upstream
   _button: {fileID: 0}
+=======
+  _button: {fileID: 568754933}
   sneakers: 3
+>>>>>>> Stashed changes
 --- !u!1 &647723068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,7 +1240,6 @@ MonoBehaviour:
   nextPrice: {fileID: 1647984350}
   ItemID: 1
   _button: {fileID: 863995324}
-  sneakers: 0
 --- !u!1 &897396197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,10 +1346,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98be1c72572bb784c9955831c9c7c5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   moneyText: {fileID: 1640903944}
+=======
+  moneytext: {fileID: 1640903944}
   buyButton_superstar: {fileID: 0}
   buyButton_gm_superstar: {fileID: 0}
   buyButtonImage_superstar: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!114 &897396202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1376,7 +1378,6 @@ MonoBehaviour:
   nextPrice: {fileID: 0}
   ItemID: 0
   _button: {fileID: 0}
-  sneakers: 0
 --- !u!1 &907793547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,34 +1466,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 907793556}
         m_TargetAssemblyTypeName: movegameobject, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 568754934}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: 039313954bdf5a04bae17f9ae4c45077, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 568754933}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1716,15 +1693,14 @@ MonoBehaviour:
   _click: {fileID: 897396201}
   _cost: 190
   soldout: {fileID: 2030218309}
-  locked: {fileID: 2051277431}
+  locked: {fileID: 1431247198}
   cost: {fileID: 1833307139}
   nextImage: {fileID: 568754934}
   nextSprite: {fileID: 21300000, guid: 039313954bdf5a04bae17f9ae4c45077, type: 3}
   nextButton: {fileID: 568754933}
-  nextPrice: {fileID: 1833307139}
+  nextPrice: {fileID: 284171627}
   ItemID: 8
   _button: {fileID: 907793549}
-  sneakers: 2
 --- !u!1 &993962536
 GameObject:
   m_ObjectHideFlags: 0
@@ -4141,18 +4117,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 907793549}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &2025478029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4372,11 +4336,18 @@ MonoBehaviour:
   cost: {fileID: 1647984350}
   nextImage: {fileID: 907793550}
   nextSprite: {fileID: 21300000, guid: 8fd7745621b188b4b9ca7980d9c24369, type: 3}
-  nextButton: {fileID: 907793549}
+<<<<<<< Updated upstream
+  nextButton: {fileID: 907793547}
   nextPrice: {fileID: 0}
   ItemID: 4
   _button: {fileID: 0}
+=======
+  nextButton: {fileID: 907793549}
+  nextPrice: {fileID: 1833307139}
+  ItemID: 4
+  _button: {fileID: 2025478028}
   sneakers: 1
+>>>>>>> Stashed changes
 --- !u!1 &2030218309
 GameObject:
   m_ObjectHideFlags: 0

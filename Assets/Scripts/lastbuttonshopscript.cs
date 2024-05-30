@@ -5,20 +5,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class movegameobject : MonoBehaviour
+public class lastbuttonshopscript : MonoBehaviour
 {
     public Animator animator;
     public click _click;
     public int _cost;
     public GameObject soldout;
-    public GameObject locked;
     public GameObject cost;
-    public Image nextImage;
-    public Sprite nextSprite;
-    public Button nextButton;
-    public GameObject nextPrice;
     public int ItemID;
     public Button _button;
+    public itembutton sneakers;
 
     public void OnClick()
     {
@@ -27,14 +23,7 @@ public class movegameobject : MonoBehaviour
         {
             animator.SetBool("Disabled", true);
             soldout.SetActive(true);
-            locked.SetActive(false);
             cost.SetActive(false);
-            nextImage.sprite = nextSprite;
-            nextButton.enabled = true;
-            nextPrice.SetActive(true);
-<<<<<<< Updated upstream
-            PlayerPrefs.SetInt("ButtonUnlocked", 1);
-=======
             switch (sneakers)
             {
                 case itembutton.superstar:
@@ -47,12 +36,16 @@ public class movegameobject : MonoBehaviour
                     PlayerPrefs.SetInt("ButtonUnlocked_Niteball", 1);
                     break;
                 case itembutton.yezzy:
+                    PlayerPrefs.SetInt("ButtonUnlocked_Yeezy", 1);
                     break;
             }
->>>>>>> Stashed changes
             _button.enabled = false;
-            
+
         }
-        
+
+    }
+    public enum itembutton
+    {
+        superstar, samba, niteball, yezzy
     }
 }
