@@ -714,6 +714,7 @@ MonoBehaviour:
   nextPrice: {fileID: 0}
   ItemID: 7
   _button: {fileID: 0}
+  sneakers: 3
 --- !u!1 &647723068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +1241,7 @@ MonoBehaviour:
   nextPrice: {fileID: 1647984350}
   ItemID: 1
   _button: {fileID: 863995324}
+  sneakers: 0
 --- !u!1 &897396197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,6 +1349,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 1640903944}
+  buyButton_superstar: {fileID: 0}
+  buyButton_gm_superstar: {fileID: 0}
+  buyButtonImage_superstar: {fileID: 0}
 --- !u!114 &897396202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,6 +1376,7 @@ MonoBehaviour:
   nextPrice: {fileID: 0}
   ItemID: 0
   _button: {fileID: 0}
+  sneakers: 0
 --- !u!1 &907793547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1724,7 @@ MonoBehaviour:
   nextPrice: {fileID: 1833307139}
   ItemID: 8
   _button: {fileID: 907793549}
+  sneakers: 2
 --- !u!1 &993962536
 GameObject:
   m_ObjectHideFlags: 0
@@ -4365,10 +4372,11 @@ MonoBehaviour:
   cost: {fileID: 1647984350}
   nextImage: {fileID: 907793550}
   nextSprite: {fileID: 21300000, guid: 8fd7745621b188b4b9ca7980d9c24369, type: 3}
-  nextButton: {fileID: 907793547}
+  nextButton: {fileID: 907793549}
   nextPrice: {fileID: 0}
   ItemID: 4
   _button: {fileID: 0}
+  sneakers: 1
 --- !u!1 &2030218309
 GameObject:
   m_ObjectHideFlags: 0

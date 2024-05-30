@@ -19,6 +19,7 @@ public class movegameobject : MonoBehaviour
     public GameObject nextPrice;
     public int ItemID;
     public Button _button;
+    public itembutton sneakers;
 
     public void OnClick()
     {
@@ -32,10 +33,26 @@ public class movegameobject : MonoBehaviour
             nextImage.sprite = nextSprite;
             nextButton.enabled = true;
             nextPrice.SetActive(true);
-            PlayerPrefs.SetInt("ButtonUnlocked", 1);
+            switch (sneakers)
+            {
+                case itembutton.superstar:
+                    PlayerPrefs.SetInt("ButtonUnlocked_Superstar", 1);
+                    break;
+                case itembutton.samba:
+                    PlayerPrefs.SetInt("ButtonUnlocked_Samba", 1);
+                    break;
+                case itembutton.niteball:
+                    break;
+                case itembutton.yezzy:
+                    break;
+            }
             _button.enabled = false;
-            
+
         }
-        
+
+    }
+    public enum itembutton
+    {
+        superstar,samba,niteball,yezzy
     }
 }

@@ -5,43 +5,44 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class click : MonoBehaviour
+public class click_samba : MonoBehaviour
 {
     public static int money
     {
         get => _money;
-        set 
-        { 
+        set
+        {
             _money = value;
-            PlayerPrefs.SetInt("money",_money);
+            PlayerPrefs.SetInt("money", _money);
         }
     }
+
     private static int _money;
-    public static int rate = 1000;
-    public Button buyButton_superstar;
-    public GameObject buyButton_gm_superstar;
-    public Image buyButtonImage_superstar;
+    public static int rate = 2000;
+    public Button buyButton_samba;
+    public GameObject buyButton_gm_samba;
+    public Image buyButtonImage_samba;
     private void Start()
     {
         money = PlayerPrefs.GetInt("money", 0);
-        rate = PlayerPrefs.GetInt("rate", 1000);
-        int buttonenabled_superstar = PlayerPrefs.GetInt("ButtonUnlocked_Superstar", -1);
-        if(buttonenabled_superstar != -1 )
+        rate = PlayerPrefs.GetInt("rate", 2000);
+        int buttonenabled_samba = PlayerPrefs.GetInt("ButtonUnlocked_Samba", -1);
+        if (buttonenabled_samba != -1)
         {
-            buyButton_superstar.enabled = true;
-            buyButtonImage_superstar.raycastTarget = true;
-            buyButton_gm_superstar.SetActive(true);
+            buyButton_samba.enabled = true;
+            buyButtonImage_samba.raycastTarget = true;
+            buyButton_gm_samba.SetActive(true);
         }
         else
         {
-            buyButton_superstar.enabled = false;
-            buyButtonImage_superstar.raycastTarget = false;
-            buyButton_gm_superstar.SetActive(false);
+            buyButton_samba.enabled = false;
+            buyButtonImage_samba.raycastTarget = false;
+            buyButton_gm_samba.SetActive(false);
 
         }
 
     }
- 
+
     public void Click()
     {
         money += rate;
@@ -52,12 +53,11 @@ public class click : MonoBehaviour
         if (money >= 15)
         {
             money -= 15;
-            rate += 1000;
+            rate += 2000;
             PlayerPrefs.SetInt("money", money);
             PlayerPrefs.SetInt("rate", rate);
         }
     }
-
 
 
     public bool BuyItem(int itemCost)
@@ -74,9 +74,9 @@ public class click : MonoBehaviour
             return false;
         }
     }
-    
-    
-    
+
+
+
     public static void SaveData(string money, string value)
     {
         PlayerPrefs.SetString(money, value);
