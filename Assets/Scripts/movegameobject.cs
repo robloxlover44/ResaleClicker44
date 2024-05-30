@@ -13,22 +13,26 @@ public class movegameobject : MonoBehaviour
     public GameObject soldout;
     public GameObject locked;
     public GameObject cost;
-    public Image nextSprite;
+    public Image nextImage;
+    public Sprite nextSprite;
     public Button nextButton;
-    public GameObject nextPrice;
+    public Text nextPrice;
     public GameObject nextShoe;
+    public int ItemID;
 
     public void OnClick()
     {
 
         if (_click.BuyItem(_cost))
         {
-            animator.SetBool("Disabled", false);
+            animator.SetBool("Disabled", true);
             soldout.SetActive(true);
             locked.SetActive(false);
             cost.SetActive(false);
-            
-            nextPrice.SetActive(true);
+            nextImage.sprite = nextSprite;
+            nextButton.enabled = true;
+            nextPrice.text= "kaki puki";
+            PlayerPrefs.SetInt("Item", ItemID);
             
         }
         

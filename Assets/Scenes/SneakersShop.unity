@@ -490,19 +490,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 568754934}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: movegameobject, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &568754934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,14 +699,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 568754931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 838b47924ba8d124386410a9114060df, type: 3}
+  m_Script: {fileID: 11500000, guid: c381055cd0edb864aa07f5bc3af217c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 568754936}
-  _click: {fileID: 897396201}
-  _cost: 250
-  soldout: {fileID: 1638930555}
-  cost: {fileID: 284171627}
+  animator: {fileID: 0}
+  _click: {fileID: 0}
+  _cost: 0
+  soldout: {fileID: 0}
+  locked: {fileID: 0}
+  cost: {fileID: 0}
+  nextImage: {fileID: 0}
+  nextSprite: {fileID: 0}
+  nextButton: {fileID: 0}
+  nextPrice: {fileID: 0}
+  nextShoe: {fileID: 0}
+  ItemID: 7
 --- !u!1 &647723068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,19 +1013,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2025478029}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: 7896b3d969fcf1648983637a55141b2b, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2025478028}
+      - m_Target: {fileID: 863995324}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -1040,7 +1023,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &863995325
 MonoBehaviour:
@@ -1117,19 +1100,7 @@ MonoBehaviour:
   - eventID: 4
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 5764802314797713699, guid: 39d0b066a77812449a3c56508efddce4, type: 3}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 1
+        m_Calls: []
   - eventID: 2
     callback:
       m_PersistentCalls:
@@ -1275,10 +1246,12 @@ MonoBehaviour:
   soldout: {fileID: 1423460242}
   locked: {fileID: 1705357803}
   cost: {fileID: 1908765971}
+  nextImage: {fileID: 2025478029}
   nextSprite: {fileID: 21300000, guid: 7896b3d969fcf1648983637a55141b2b, type: 3}
   nextButton: {fileID: 2025478026}
-  nextPrice: {fileID: 1647984350}
+  nextPrice: {fileID: 1647984353}
   nextShoe: {fileID: 0}
+  ItemID: 1
 --- !u!1 &897396197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,10 +1377,12 @@ MonoBehaviour:
   soldout: {fileID: 0}
   locked: {fileID: 0}
   cost: {fileID: 0}
+  nextImage: {fileID: 0}
   nextSprite: {fileID: 0}
   nextButton: {fileID: 0}
   nextPrice: {fileID: 0}
   nextShoe: {fileID: 0}
+  ItemID: 0
 --- !u!1 &907793547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,7 +1471,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 907793556}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: movegameobject, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -1747,12 +1722,14 @@ MonoBehaviour:
   _click: {fileID: 897396201}
   _cost: 190
   soldout: {fileID: 2030218309}
-  locked: {fileID: 1431247198}
+  locked: {fileID: 2051277431}
   cost: {fileID: 1833307139}
-  nextSprite: {fileID: 0}
+  nextImage: {fileID: 568754934}
+  nextSprite: {fileID: 21300000, guid: 039313954bdf5a04bae17f9ae4c45077, type: 3}
   nextButton: {fileID: 0}
-  nextPrice: {fileID: 284171627}
+  nextPrice: {fileID: 284171630}
   nextShoe: {fileID: 0}
+  ItemID: 8
 --- !u!1 &993962536
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,18 +4146,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 907793550}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: 8fd7745621b188b4b9ca7980d9c24369, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 907793549}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
@@ -4410,10 +4375,12 @@ MonoBehaviour:
   soldout: {fileID: 1258507207}
   locked: {fileID: 2051277431}
   cost: {fileID: 1647984350}
-  nextSprite: {fileID: 0}
+  nextImage: {fileID: 907793550}
+  nextSprite: {fileID: 21300000, guid: 8fd7745621b188b4b9ca7980d9c24369, type: 3}
   nextButton: {fileID: 907793547}
-  nextPrice: {fileID: 1833307139}
+  nextPrice: {fileID: 1833307142}
   nextShoe: {fileID: 0}
+  ItemID: 4
 --- !u!1 &2030218309
 GameObject:
   m_ObjectHideFlags: 0
