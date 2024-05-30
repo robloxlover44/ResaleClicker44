@@ -18,14 +18,14 @@ public class superclick : MonoBehaviour
     }
 
     private static int _money;
-    public static int rate = 1488;
+    public static int rate = 130;
 
     public Text moneyText;
 
     private void Start()
     {
         money = PlayerPrefs.GetInt("money", 0);
-        rate = PlayerPrefs.GetInt("rate", 1);
+        rate = PlayerPrefs.GetInt("rate", 130);
     }
 
     public void Click()
@@ -38,7 +38,7 @@ public class superclick : MonoBehaviour
         if (money >= 15)
         {
             money -= 15;
-            rate += 1;
+            rate += 130;
             PlayerPrefs.SetInt("money", money);
             PlayerPrefs.SetInt("rate", rate);
         }

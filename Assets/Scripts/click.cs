@@ -18,14 +18,14 @@ public class click : MonoBehaviour
     }
 
     private static int _money;
-    public static int rate = 1488;
+    public static int rate = 1;
 
     public Text moneyText;
 
     private void Start()
     {
         money = PlayerPrefs.GetInt("money", 0);
-        rate = PlayerPrefs.GetInt("rate", 1488);
+        rate = PlayerPrefs.GetInt("rate", 1);
     }
 
     public void Click()
@@ -38,7 +38,7 @@ public class click : MonoBehaviour
         if (money >= 15)
         {
             money -= 15;
-            rate += 1488;
+            rate += 1;
             PlayerPrefs.SetInt("money", money);
             PlayerPrefs.SetInt("rate", rate);
         }
